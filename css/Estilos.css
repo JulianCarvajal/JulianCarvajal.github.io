@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h2{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.boton-menu{
+    display: none;
+    background-color: rgb(27, 33, 39);
+    color: white;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    right: 5px;
+    z-index: 3;
+}
+
+/* Principal */
+.header{
+    background-color: rgb(27, 33, 39);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.logo img{
+    width: 36rem;
+    border-radius: 35px;
+}
+
+.menu{
+    height: inherit;
+    display: flex;
+    z-index: 2;
+}
+
+.header ol{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header a{
+    display: flex;
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    padding: 0 15px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    background-image: url(../img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    text-transform: capitalize;
+    max-width: 500px;
+    padding-left: 100px;
+    color: white;
+}
+
+h1 strong{
+    color: teal;
+}
+
+/* Portafolio */
+.fondo-portafolio{
+    background-color: #efefef;
+}
+
+.portafolio{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.portafolio h2{
+    padding: 50px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proyectos{
+    width: 480px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.port-contenedor{
+    width: inherit;
+    height: inherit;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.elementos{
+    height: 100%;
+}
+
+.container-portafolio{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin: -320px auto 0px;
+    box-shadow: 12px 12px 8px 0px rgba(0,0,0,0.75);
+}
+
+.container-portafolio h3{
+    text-align: center;
+    margin: 4rem 0px;
+    font-size: 3rem;
+}
+
+.container-portafolio p{
+    padding: 0px 20px;
+    font-size: 1.6rem;
+}
+
+/* Sobre mí */
+.info-container{
+    background-color: #e0e0e0;
+}
+
+.info-container h2{
+    padding: 30px 0px 40px 0px;
+}
+
+.yo{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagen-escritorio{
+    margin-bottom: 50px;
+}
+
+.yo p{
+    max-width: 480px;
+    padding: 20px 20px;
+    font-size: 1.6rem;
+}
+
+/* Tecnologías */
+.tecnologias{
+    background-color: #2d2a55;
+}
+
+.tecnologica{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tecnologica h2{
+    color: white;
+    margin: 4rem 0px;
+    width: 100%;
+}
+
+.habilidades > p{
+    background-color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.habilidades .primero{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.habilidades .segundo{
+    margin-top: 25px;
+}
+
+.habilidades .tercero{
+    margin-top: 25px 0px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+}
+
+.habilidades .cuarto{
+    margin: auto;
+}
+
+.habilidades .quinto{
+    margin: 25px 0px 50px 100px;
+}
+
+/* Trabajo */
+.trabajo{
+    background-color: #1d1c2e;
+    color: white;
+}
+
+.trabajo h2{
+    padding: 50px;
+}
+
+.trabajo h3{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.trabajo-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.trabajo-container div{
+    width: 500px;
+}
+
+.lista{
+    font-size: 1.6rem;
+    margin: 40px 0px 50px 0px;
+    padding: 0 20px;
+}
+
+.enlaces{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    justify-content: flex-end;
+}
+
+.link{
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 60px;
+    line-height: 50px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.whatsapp{
+    background-image: url(../img/Whatsapp.png);
+    background-repeat: no-repeat;
+}
+
+.linkedin{
+    background-image: url(../img/linkedin.png);
+    background-repeat: no-repeat;
+}
+
+.github{
+    background-image: url(../img/github-1.png);
+    background-repeat: no-repeat;
+}
+
+.twitter{
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+}
+
+.facebook{
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+}
+
+.instagram{
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+}
+
+/* Footer */
+.footer{
+    background-color: #15151a;
+    height: 50px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1023px){
+    html{
+        font-size: 9px;
+    }
+    .logo img{
+        width: 320px;
+    }
+    .hero{
+        height: 400px;
+        background-size: cover;
+    }
+    .proyectos{
+        width: 360px;
+        height: 320px;
+    }
+    .container-portafolio{
+        margin: -265px auto 0px;
+    }
+    .container{
+        justify-content: space-around;
+    }
+    .yo{
+        justify-content: center;
+    }
+    .tecnologica{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .boton-menu{
+        display: flex;
+    }
+    .header{
+        display: block;
+        height: auto;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba( 5, 111, 255, .9);
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        transition: .3s;
+    }
+    .menu.is-active{
+        right: 0;
+    }
+    .header ol{
+        display: initial;
+        width: 100%;
+    }
+    .header ol li{
+        height: 50px;
+        margin-bottom: 3rem;
+    }
+    .header a{
+        justify-content: center;
+        width: 100%;
+        height: 4rem;
+        font-size: 3rem;
+        text-decoration: underline;
+        margin-bottom: 2rem;
+    }
+    .container-portafolio h3{
+        margin: 2.5rem 0px;
+    }
+    .enlaces{
+        margin: 0 auto;
+    }
+    .contacto > h3{
+        margin-bottom: 4rem;
+    }
+    .imagen-escritorio{
+        width: 100%;
+        max-width: 480px;
+        margin: 0px;
+    }
+    .imagen-yo{
+        width: inherit;
+    }
+    .yo p{
+        margin: 1em 0px;
+        font-size: 2rem;
+    }
+    .lista{
+        font-size: 2rem;
+    }
+    .htmlycss{
+        width: 100%;
+        max-width: 480px;
+        padding: 0 50px;
+    }
+    .htmlycss img{
+        width: inherit;
+    }
+    .habilidades .tercero{
+        margin-left: 320px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    html{
+        font-size: 8px;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 1.5em;
+        letter-spacing: -.2px;
+        text-transform: capitalize;
+        max-width: 500px;
+        padding-left: 20px;
+        color: white;
+    }
+    .proyectos{
+        width: 100%;
+        max-width: 360px;
+        height: 290px;
+        padding: 10px;
+    }
+    .container-portafolio{
+        margin: -240px auto 0px;
+    }
+    .enlaces{
+        max-width: 220px;
+    }
+    .habilidades > p{
+        width: 110px;
+    }
+    .habilidades .primero{
+        margin: 25px auto;
+    }
+    .habilidades .segundo{
+        margin: 25px auto;
+    }
+    .habilidades .tercero{
+        margin: 25px auto;
+    }
+    .habilidades .cuarto{
+        margin: 25px auto;
+    }
+    .habilidades .quinto{
+        margin: 25px auto;
+    }
+    .logo img{
+        max-width: 100%;
+    }
+}
